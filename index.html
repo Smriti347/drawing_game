@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Purple Pink Drawing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Draw & Play</h1>
+
+    <div class="toolbar">
+      <div class="toolbar-group">
+        <span class="label">Brush color</span>
+        <button class="color-btn" data-color="#ff66cc"></button>
+        <button class="color-btn" data-color="#ff99ff"></button>
+        <button class="color-btn" data-color="#c266ff"></button>
+        <button class="color-btn" data-color="#a64dff"></button>
+        <input type="color" id="colorPicker" value="#ff66cc" />
+      </div>
+
+      <div class="toolbar-group">
+        <span class="label">Brush size</span>
+        <input type="range" id="brushSize" min="2" max="40" value="8" />
+        <span id="brushValue">8</span>px
+      </div>
+
+      <div class="toolbar-group buttons">
+        <button id="clearBtn">Clear</button>
+        <button id="saveBtn">Save</button>
+      </div>
+    </div>
+
+    <div class="canvas-wrapper">
+      <canvas id="drawingCanvas"></canvas>
+    </div>
+
+    <p class="hint">Tip: Draw with your mouse or finger. Try different brush sizes!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
